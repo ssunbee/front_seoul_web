@@ -1,0 +1,149 @@
+@charset "utf-8";
+a{color: #000;}
+body,h1,input{font:normal 15px/1.5em seoulmilk,sans-serif; }
+
+
+@font-face{
+    font-family:seoulmilk;
+    src:url('../font/SEOULMILK 500mL TTF.eot');
+    src:url('../font/SEOULMILK 500mL TTF.eot?#iefix')format('embedded-opentype'),
+            url('../font/SEOULMILK 500mL TTF.ttf')format('truetype'),
+            url('../font/SEOULMILK 500mL TTF.woff')format('woff');
+}
+
+#wrap {
+    width: 100%;
+    margin: 0 auto;
+    min-width: 1970px;
+}
+
+
+#top {
+    width: 100%;
+    height: 110px;
+    margin: 0px auto;
+}
+
+.banner1 {
+    width: 1920px;
+    height: 50px;
+/*    background-color: antiquewhite;*/
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+}
+#sns{position: absolute; right: 100px; top: 1px;}
+#sns>p{float: left; margin-right: 10px; 
+width: 45px; height: 45px;}
+#sns>p img{padding-top:5px; transition: all 0.3s;}
+#sns>p img:hover{transform: scale(1.1);}
+
+.banner1 #con1{ position: absolute; right: 50px; bottom: 5px; }
+
+
+#main{width: 100%; height: 60px; background-color: orangered;}
+
+#main_navi {
+    width: 1920px;
+    height: 60px;
+    margin: 0px auto;
+    position: relative;
+}
+
+#menu {
+    width: 800px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+.menu1{
+    float: left;
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    transform: all 1s;
+    position: relative;
+    letter-spacing: 1.5px;
+    
+    
+}
+.menu1>a{color: white;}
+#menu>li>a{font-weight: bold; font-size: 16px; }
+
+.menu1::before{content: ""; position: absolute; right: 50%; bottom: 15px; width: 0; height: 2px; background-color: #f3bfc3; transition: all 0.5s; }
+.menu1:hover::before{width: 40%;}/*아래 밑줄 효과*/
+.menu1::after{content: ""; position: absolute; left: 50%; bottom: 15px; width: 0; height: 2px; background-color: #f3bfc3; transition: all 0.5s; }
+.menu1:hover::after{width: 40%;}
+
+
+.menu1:hover .menu1_1{
+    width: 1170px; margin: 0 auto; left: -300px;  top: 55px; 
+}
+.menu1:hover .menu1_2{
+ 
+    width: 650px; margin: 0 auto; left: -200px;  top: 55px; 
+}
+.menu1_2,.menu1_1{
+    background-color: #f3bfc3; border-radius: 30px;   position: absolute;  overflow: hidden;
+}
+
+.submenu {
+    display: none; 
+}
+.submenu>li>a{display: block;}
+.submenu>li>a:hover{background-color: #eaeaea; }
+.submenu > li {
+    float: left;
+    width: 130px;
+    font-size: 15px;
+    
+}
+
+.menu1:hover .submenu {
+    display: block; 
+}
+
+.search_btn{ width: 190px; height: 30px; position: absolute; right: 50px; bottom: 10px; border: 3px solid green; border-radius: 50px; overflow: hidden;}
+
+
+
+ .search_btn>button{border: none; background:#fff; width: 40px; height: 30px;}
+.search_btn input[type=search]{width: 150px; height: 30px; float: left; font-size: 13px;border: none; outline: none; text-indent: 10px}
+
+
+#join_container{width: 1000px; margin: 50px auto; border: 3px solid lightpink;;padding: 10px;
+}
+
+#join_container>h1{width: 100%; height: 50px; line-height: 50px; background-color: lightpink; font-size: 30px;}
+#agr_left{float: left;  width: 500px; height: 30px; line-height: 30px; font-size: 18px}
+#agr_right{float: right;  width: 500px; height: 30px; line-height: 30px; text-align: right; }
+#agr_right p{display: inline; margin-left: 5px; }
+#agr_right p:nth-child(2){border-bottom: 5px solid lightpink;}
+
+#join{margin: 30px 10px; }
+legend{font-size: 17px;}
+inputtype:text{width: 200px;}
+.join1 label{width: 150px; height: 30px;  display: inline-block; text-align: left; line-height: 30px; margin-right: 10px; color: red; } 
+
+
+#u_pwd>label{width: 600px;}
+#join label{margin-top: 20px;}
+.join1 span{display: block;}
+#u_pwd2,#u_pwd2,#u_name{display: block;}
+#phone1,#phone2,#phone3{width: 100px; margin: 0 10px;}
+#phone1, .u_email{height: 32px; text-align: center; background-color: #eaeaea}
+input{width: 200; height: 30px;}
+#email7 span{display: inline-block;}
+#email_list{width: 150px;  height: 40px;}
+#phone1_wrap button{width: 100px;  height: 29px; margin-right: 5px; background-color: #cccccc;  border-radius: 5px; border: none; font-size: 12px;}
+#phone1_wrap button:hover{background-color: #fff; border: 1px solid #cccccc; cursor: pointer;}
+
+.btn{height: 100px; text-align: center;line-height: 150px;}
+.btn input{width: 150px;  height: 50px; margin: 0 10px; background-color: #cccccc;  border-radius: 5px; border: none; font-size: 15px;}
+.btn input:hover{background-color: lightpink;cursor: pointer;}
+
+input[type=text]{width: 150px}
+input:focus {outline: none;}
+#pwd_label>label{width: 600px;}
+label[for=u_num]{width: 60px}

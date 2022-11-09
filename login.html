@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/pp.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+   <div id="wrap">
+        <header id="top">
+            <div class="banner1">
+                <h1><a href="index.html"><img src="image/banner.png" alt="#" width="242" height="50"></a></h1>
+                <div id="sns">
+                    <p><a href="https://www.facebook.com/SeoulMilk"><img src="image/face.png" alt="#" width="35" height="35"></a></p>
+                    <p><a href="https://www.instagram.com/seoulmilk_official/"><img src="image/insta.png" alt="#" width="35" height="35"></a></p>
+                    <p><a href="https://www.youtube.com/user/seoulmilk2010"><img src="image/youtube.png" alt="#" width="35" height="35"></a></p>
+                    <p> <a href="http://www.seoulmilkblog.co.kr/"><img src="image/b.png" alt="#" width="42" height="42"></a></p>
+
+                </div>
+
+                <div id="con1">
+                    <a href="#"><img src="image/join32.png" alt="로그인" width="30" height="30"></a>
+                </div>
+
+            </div>
+            <div id="main">
+                <nav id="main_navi">
+
+                    <ul id="menu">
+                        <li class="menu1"><a href="#">제품소개</a>
+                            <ul class="submenu menu1_1">
+                                <li><a href="#">우유류</a></li>
+                                <li><a href="#">발효유류</a></li>
+                                <li><a href="#">유음료류</a></li>
+                                <li><a href="#">커피음료</a></li>
+                                <li><a href="#">치즈류</a></li>
+                                <li><a href="#">가공식품류</a></li>
+                                <li><a href="#">디저트류</a></li>
+                                <li><a href="#">반려동물제품</a></li>
+                                <li><a href="#">수입제품</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu1"><a href="#">about서울우유</a>
+                            <ul class="submenu menu1_2">
+                                <li><a href="#">조합현황</a></li>
+                                <li><a href="#">중앙연구소</a></li>
+                                <li><a href="#">채용정보</a></li>
+                                <li><a href="#">입찰정보</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu1"><a href="#">홍보&amp;이벤트</a></li>
+                        <li class="menu1"><a href="#">고객지원실</a></li>
+                    </ul>
+
+                    <div class="search_btn">
+                        <input type="search" placeholder="검색어를 입력하세요.">
+                        <button type="button"><img src="image/search.png" alt="검색" width="20" height="20"></button>
+                    </div>
+
+
+
+                </nav>
+            </div>
+        </header>
+    </div>
+   
+   
+    <div id="login_wrap">
+       
+        <form action="login.asp" method="post">
+            <div class="login_l">
+                <h2>회원 로그인</h2>
+                <p>서울우유에 오신 것을 환영합니다.<br>
+                    회원 가입하신 후 다양한 서비스를 경험해보세요.</p>
+            </div>
+
+            <div class="login_r">
+                <div class="logright">
+                    <p class="u_id"><input type="text" placeholder="아이디 입력"></p>
+                    <p class="u_pwd"><input type="password" placeholder="비밀번호 입력"></p>
+                </div>
+                <p class="login"><input type="button" value="로그인"></p>
+
+                <div id="logbtn">
+                    <input type="checkbox" name="save" value="아이디저장" id="chk"><label for="chk">아이디저장</label>
+                        <div><button id="FindId">아이디찾기</button>
+                        <button id="Findpwd">비밀번호찾기</button></div>
+                </div>
+
+                <div class="joinbtn">
+                    <a href="join.html">
+                    <strong>아직도 회원이 아니세요?</strong>
+                    <span>다양한 특가 상품 및 이벤트 소식을 받으실 수 있습니다.</span>
+                </a>
+                </div>
+                <div class="snslog">
+                  
+                    <p>SNS 계정으로 로그인</p>
+                    <div>
+                    <p><a href="#"><img src="image/sns1.jpg" alt="카톡" width="50" height="50"></a></p>
+                    <p><a href="#"><img src="image/sns2.jpg" alt="네이버"></a></p>
+                    </div>
+                   
+               
+                </div>
+            </div>
+
+            <!--login_l 회원로그인-->
+        </form>
+    </div>
+
+</body>
+
+</html>

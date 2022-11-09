@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>회원가입2</title>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/pp.js"></script>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/join2.css">
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="top">
+            <div class="banner1">
+                <h1><a href="index.html"><img src="image/banner.png" alt="#" width="242" height="50"></a></h1>
+                <div id="sns">
+                    <p><a href="https://www.facebook.com/SeoulMilk"><img src="image/face.png" alt="#" width="35" height="35"></a></p>
+                    <p><a href="https://www.instagram.com/seoulmilk_official/"><img src="image/insta.png" alt="#" width="35" height="35"></a></p>
+                    <p><a href="https://www.youtube.com/user/seoulmilk2010"><img src="image/youtube.png" alt="#" width="35" height="35"></a></p>
+                    <p> <a href="http://www.seoulmilkblog.co.kr/"><img src="image/b.png" alt="#" width="42" height="42"></a></p>
+
+                </div>
+
+                <div id="con1">
+                    <a href="#"><img src="image/join32.png" alt="로그인" width="30" height="30"></a>
+                </div>
+
+            </div>
+            <div id="main">
+                <nav id="main_navi">
+
+                    <ul id="menu">
+                        <li class="menu1"><a href="#">제품소개</a>
+                            <ul class="submenu menu1_1">
+                                <li><a href="#">우유류</a></li>
+                                <li><a href="#">발효유류</a></li>
+                                <li><a href="#">유음료류</a></li>
+                                <li><a href="#">커피음료</a></li>
+                                <li><a href="#">치즈류</a></li>
+                                <li><a href="#">가공식품류</a></li>
+                                <li><a href="#">디저트류</a></li>
+                                <li><a href="#">반려동물제품</a></li>
+                                <li><a href="#">수입제품</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu1"><a href="#">about서울우유</a>
+                            <ul class="submenu menu1_2">
+                                <li><a href="#">조합현황</a></li>
+                                <li><a href="#">중앙연구소</a></li>
+                                <li><a href="#">채용정보</a></li>
+                                <li><a href="#">입찰정보</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu1"><a href="#">홍보&amp;이벤트</a></li>
+                        <li class="menu1"><a href="#">고객지원실</a></li>
+                    </ul>
+
+                    <div class="search_btn">
+                        <input type="search" placeholder="검색어를 입력하세요.">
+                        <button type="button"><img src="image/search.png" alt="검색" width="20" height="20"></button>
+                    </div>
+
+
+
+                </nav>
+            </div>
+        </header>
+        <div id="join_container">
+            <h1>회원가입</h1>
+            <p id="agr_left">02.정보입력</p>
+            <div id="agr_right">
+                <p>01 약관동의</p>
+                <p>02 정보입력</p>
+                <p>03 가입완료</p>
+            </div>
+            <form action="join.asp" method="post" id="join">
+                <fieldset class="join1">
+                    <legend>회원정보 입력</legend>
+
+                    <div><label for="u_email">이메일 아이디&#40;필수&#41;</label>
+                        <p id="email7">
+                            <input type="email" id="u_email" >@
+                            <span><input type="email"></span>
+                            <select id="email_list">
+                                <option value="">직접입력</option>
+                                <option value="naver.com">naver.com</option>
+                                <option value="nate.com">nate.com</option>
+                                <option value="daum.net">daum.net</option>
+                            </select>
+                        </p> 
+                    </div>
+
+                    <p id="pwd_label"><label for="u_pwd">비밀번호(숫자, 영문, 특수문자 조합 8~15자리)</label></p>
+                    <p><input type="password" id="u_pwd" autocomplete="off" required></p>
+                    <p><label for="u_pwd2">비밀번호 확인</label></p>
+                    <p><input type="password" id="u_pwd2" autocomplete="off" required><span>비밀번호를 확인해 주세요.</span></p>
+
+                    <p><label for="u_name">성명&#40;필수&#41;</label>
+                        <input type="text" id="u_name" autocomplete="off" required><span>성명을 입력해 주세요.</span></p>
+                    <div class="phone_box">
+                        <label for="phone1">전화번호</label>
+                        <p id="phone1_wrap">
+                            <select name="phone1" id="phone1">
+                                <option value="010" selected>010</option>
+                                <option value="011">011</option>
+                                <option value="011">016</option>
+                                <option value="011">017</option>
+                                <option value="011">018</option>
+                                <option value="011">019</option>
+                                <option value="011">070</option>
+                                <option value="011">080</option>
+                                <option value="011">02</option>
+
+                            </select>
+
+                            -<input type="tel" id="phone2" title="전화번호 앞자리">
+                            -<input type="tel" id="phone3" title="전화번호 뒷자리">
+                        
+                            
+                            <button>인증번호 받기</button>
+                            <button>다시받기</button>
+                        </p>
+                    </div>
+
+                    <p><label for="u_num">인증번호</label><input type="text" id="u_num" autocomplete="off" required><span>3분이내에 인증번호를 입력하셔야 하며, 입력시간 초과시 인증번호를 다시 받아 주시기 바랍니다.</span></p>
+
+                </fieldset>
+                <p class="btn">
+                    <input type="submit" value="회원가입하기">
+                    <input type="reset" value="다시작성">
+                </p>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
